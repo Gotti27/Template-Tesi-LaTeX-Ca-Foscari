@@ -1,0 +1,52 @@
+\documentclass[12pt, a4pages, italian]{report}
+\usepackage[utf8]{inputenc}
+\usepackage{tikz}
+\usepackage{geometry}
+\usepackage{changepage}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=north west,yshift=-1.5cm,xshift=1cm]
+    at (current page.north west)
+    {\includegraphics[height=60mm]{logo.jpg}};
+\end{tikzpicture}
+\vspace{5cm}
+\begin{center}
+
+\Large{Corso di Laurea (*)\\in (corso di laurea) \\}
+\small{ordinamento ??}
+
+\vspace{1.5cm}
+\LARGE{Tesi di Laurea}
+\vspace{1.5cm}
+
+\Huge{\textbf{Titolo}}\\
+\huge{eventuale sottotitolo}
+
+\end{center}
+\begin{tikzpicture}[remember picture,overlay]
+\node[anchor=south west, yshift=1.5cm,xshift=1cm]
+    at (current page.south west) {
+    \begin{tabular}{l}
+        \textbf{Relatore} \\
+        Prof Nome e Cognome \\[.3cm]
+        \textbf{Correlatore} \\
+        Prof Nome e Cognome\\[1cm]
+        \textbf{Laureando} \\
+        Nome e Cognome\\
+        Matricola XXXXXX\\[.5cm]
+        \textbf{Anno accademico}\\
+        20XX-20XX
+    \end{tabular}
+    };
+\end{tikzpicture}
+\end{titlepage}
+\stepcounter{page}
+
+\tableofcontents
+
+\chapter{Introduction}
+
+\end{document}
