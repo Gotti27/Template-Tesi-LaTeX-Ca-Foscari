@@ -5,3 +5,6 @@
 
 ## Contributors
 - @Alessio-Campa
+
+## Other projects
+See also the beamer template at https://github.com/most-serene/UNIVE-beamer
